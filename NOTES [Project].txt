@@ -1,0 +1,68 @@
+create 'client' folder
+
+use Vite
+    Vite: new generation tool i.e. much faster than regular create react app.
+    command >> 'npm create vite@latest ./' , After Enter
+    √ Select a framework: » React
+    √ Select a variant: » JavaScript
+    command >> npm install [to install react app]
+    In 'src' folder, create a folder 'constants'
+
+install tailwindcss
+    -It is a utility-first css framework that's going to make the style link of our application much simpler using utility classes [like flexm pt-4, text-center & rotate-90]  
+     command: 'npm install -D tailwindcss postcss autoprefixer'
+
+inside app.jsx 
+    we are going to setup the routing for our application.
+    we have to install react router dom
+        command: npm i react-router-dom
+
+we are using the verion 6 of react router dom the latest and gratest.
+
+'isSupriseMe' additional parameter, based on this property we can know whether we want to show addition button with this form field
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+SERVER
+
+cd .\server\
+npm init -y // for package.json
+
+npm i cloudinary cors dotenv express mongoose nodemon openai //cloudinary : use to store our images.
+							//cors : cross origin requests
+							//dotenv : for storing secerets
+
+	put in scritp section :
+		"start" : "modemon index"
+	add below discription i.e,
+		"type": "module"
+
+create
+	index.js //in server folder
+
+dotenv.config() // this line allow us to pool our environment variable from our dot env file which will create soon
+
+
+** In server folder:
+	create folder mongoosedb
+		create file connect.js
+			mongoose.set('strictQuery',true); //useful when working with search functionality.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
